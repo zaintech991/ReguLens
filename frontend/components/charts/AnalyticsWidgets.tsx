@@ -4,26 +4,44 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ResponsiveContainer, PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, AreaChart, Area } from "recharts";
 import { motion } from "framer-motion";
 import { Activity, AlertCircle, CheckCircle2, Clock } from "lucide-react";
-
-// Mock data for the heatmap
-const RISK_DATA = [
-  { id: "A1", risk: 12, label: "Plant A - North" },
-  { id: "A2", risk: 45, label: "Plant A - South" },
-  { id: "B1", risk: 88, label: "Plant B - Main" },
-  { id: "B2", risk: 23, label: "Plant B - East" },
-  { id: "C1", risk: 5, label: "Plant C - West" },
-  { id: "C2", risk: 67, label: "Plant C - Core" },
-];
-
-const ACTIVITY_DATA = [
-  { id: 1, action: "System Audit", user: "System", time: "2m ago", status: "success" },
-  { id: 2, action: "Alert Resolved", user: "Sarah W.", time: "15m ago", status: "success" },
-  { id: 3, action: "Threshold Exceeded", user: "Sensor 4", time: "1h ago", status: "warning" },
-  { id: 4, action: "Report Generated", user: "John D.", time: "2h ago", status: "success" },
-  { id: 5, action: "Login Failed", user: "Unknown", time: "3h ago", status: "error" },
-];
+import { useFacilityRisks, useRecentActivity } from "@/lib/hooks";
+import { LoadingSkeleton } from "@/components/cards/LoadingSkeleton";
 
 export function RiskHeatmap() {
+  const { data, isLoading } = useFacilityRisks();
+  
+  if (isLoading) {
+    return (
+      <Card className="border border-gray-100 shadow-sm h-full">
+        <CardHeader>
+          <CardTitle className="text-base font-semibold text-gray-900">Facility Risk Heatmap</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="h-32 flex items-center justify-center">
+            <div className="text-sm text-muted-foreground">Loading...</div>
+          </div>
+        </CardContent>
+      </Card>
+    );
+  }
+  
+  const riskData = data?.facilities || [];
+  
+  if (riskData.length === 0) {
+    return (
+      <Card className="border border-gray-100 shadow-sm h-full">
+        <CardHeader>
+          <CardTitle className="text-base font-semibold text-gray-900">Facility Risk Heatmap</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="h-32 flex items-center justify-center">
+            <div className="text-sm text-muted-foreground">No facility data available</div>
+          </div>
+        </CardContent>
+      </Card>
+    );
+  }
+  
   return (
     <Card className="border border-gray-100 shadow-sm h-full">
       <CardHeader>
@@ -31,7 +49,7 @@ export function RiskHeatmap() {
       </CardHeader>
       <CardContent>
         <div className="grid grid-cols-2 gap-4">
-          {RISK_DATA.map((item) => (
+          {riskData.map((item) => (
             <div key={item.id} className="flex flex-col gap-2">
               <div className="flex justify-between text-xs text-muted-foreground">
                 <span>{item.label}</span>
@@ -57,6 +75,40 @@ export function RiskHeatmap() {
 }
 
 export function RecentActivity() {
+  const { data, isLoading } = useRecentActivity(5);
+  
+  if (isLoading) {
+    return (
+      <Card className="border border-gray-100 shadow-sm h-full">
+        <CardHeader>
+          <CardTitle className="text-base font-semibold text-gray-900">Recent Audit Log</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="h-32 flex items-center justify-center">
+            <div className="text-sm text-muted-foreground">Loading...</div>
+          </div>
+        </CardContent>
+      </Card>
+    );
+  }
+  
+  const activities = data?.activities || [];
+  
+  if (activities.length === 0) {
+    return (
+      <Card className="border border-gray-100 shadow-sm h-full">
+        <CardHeader>
+          <CardTitle className="text-base font-semibold text-gray-900">Recent Audit Log</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="h-32 flex items-center justify-center">
+            <div className="text-sm text-muted-foreground">No recent activity</div>
+          </div>
+        </CardContent>
+      </Card>
+    );
+  }
+  
   return (
     <Card className="border border-gray-100 shadow-sm h-full">
       <CardHeader>
@@ -64,7 +116,7 @@ export function RecentActivity() {
       </CardHeader>
       <CardContent>
         <div className="space-y-4">
-          {ACTIVITY_DATA.map((item) => (
+          {activities.map((item) => (
             <div key={item.id} className="flex items-center gap-3 pb-3 border-b border-gray-50 last:border-0 last:pb-0">
               <div className={`p-2 rounded-full ${
                 item.status === "success" ? "bg-emerald-50 text-emerald-600" :

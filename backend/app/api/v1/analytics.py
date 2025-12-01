@@ -26,3 +26,21 @@ async def get_compliance_trends(days: int = 30) -> Dict[str, Any]:
         "safety_metrics": analytics_service.calculate_safety_metrics()
     }
 
+
+@router.get("/facility-risks")
+async def get_facility_risks() -> Dict[str, Any]:
+    """Get facility risk data from actual documents and logs."""
+    risk_data = analytics_service.get_facility_risk_data()
+    return {
+        "facilities": risk_data
+    }
+
+
+@router.get("/recent-activity")
+async def get_recent_activity(limit: int = 5) -> Dict[str, Any]:
+    """Get recent activity from documents and alerts."""
+    activities = analytics_service.get_recent_activity(limit=limit)
+    return {
+        "activities": activities
+    }
+

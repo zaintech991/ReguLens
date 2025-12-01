@@ -88,16 +88,37 @@ class SyntheticDataGenerator:
         threshold = random.choice(template["thresholds"])
         body = template["body"].format(threshold=threshold)
         
-        # Add some variation
+        # Add more variation to make documents more diverse (affects AI analysis)
         variations = [
             " Compliance with these standards is mandatory and non-negotiable.",
             " Failure to comply may result in regulatory action.",
             " All personnel must be trained on these requirements annually.",
-            " Documentation must be available for inspection at all times."
+            " Documentation must be available for inspection at all times.",
+            " Regular audits have identified several areas requiring improvement.",
+            " Recent inspections show overall compliance with minor exceptions.",
+            " Some facilities have exceeded thresholds in the past quarter.",
+            " Implementation has been successful across all departments.",
+            " Ongoing monitoring indicates stable compliance metrics.",
+            " Certain operational areas need enhanced oversight and training."
         ]
-        body += random.choice(variations)
+        # Add 1-3 variations to create more diverse content
+        num_variations = random.randint(1, 3)
+        for _ in range(num_variations):
+            body += random.choice(variations)
         
-        days_ago = random.randint(1, 180)
+        # Create more natural date distribution - some clustering, some gaps
+        # Use weighted random to create natural clustering (some days have multiple docs)
+        if random.random() < 0.3:  # 30% chance to cluster with recent dates
+            days_ago = random.randint(1, 30)
+        elif random.random() < 0.5:  # 50% chance for medium range
+            days_ago = random.randint(30, 90)
+        else:  # 20% chance for older dates
+            days_ago = random.randint(90, 180)
+        
+        # Add some variation to make dates less uniform
+        days_ago += random.randint(-2, 2)  # Small random offset
+        days_ago = max(1, days_ago)  # Ensure positive
+        
         published_at = (datetime.now() - timedelta(days=days_ago)).strftime("%Y-%m-%d")
         
         return {
@@ -150,14 +171,17 @@ class SyntheticDataGenerator:
     
     @staticmethod
     def generate_documents(count: int = 10, categories: List[str] = None) -> List[Dict]:
-        """Generate multiple synthetic documents."""
+        """Generate multiple synthetic documents with natural variation."""
         if categories is None:
             categories = SyntheticDataGenerator.COMPLIANCE_CATEGORIES
         
         documents = []
+        # Use random starting ID to avoid sequential patterns
+        base_id = random.randint(1000, 5000)
         for i in range(count):
             category = random.choice(categories)
-            doc_id = f"DOC-{1000 + i}"
+            # Add randomness to IDs to avoid perfect sequences
+            doc_id = f"DOC-{base_id + i + random.randint(0, 10)}"
             documents.append(SyntheticDataGenerator.generate_document(category, doc_id))
         
         return documents

@@ -38,6 +38,16 @@ export function ComplianceChart({ trends, violationsByCategory }: ComplianceChar
     value,
   }));
 
+  // Format date for display (e.g., "2024-04-15" -> "Apr 15")
+  const formatDate = (dateStr: string) => {
+    try {
+      const date = new Date(dateStr);
+      return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    } catch {
+      return dateStr;
+    }
+  };
+
   // Handle empty data
   if (!trends || trends.length === 0) {
     return (
@@ -84,15 +94,22 @@ export function ComplianceChart({ trends, violationsByCategory }: ComplianceChar
                   <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f0f0f0" />
                   <XAxis
                     dataKey="date"
+                    type="category"
                     axisLine={false}
                     tickLine={false}
-                    tick={{ fill: "#6b7280", fontSize: 12, fontFamily: "var(--font-jakarta)" }}
+                    tick={{ fill: "#6b7280", fontSize: 11, fontFamily: "var(--font-jakarta)" }}
                     dy={10}
+                    angle={-45}
+                    textAnchor="end"
+                    height={80}
+                    interval="preserveStartEnd"
+                    tickFormatter={formatDate}
                   />
                   <YAxis
                     axisLine={false}
                     tickLine={false}
                     tick={{ fill: "#6b7280", fontSize: 12, fontFamily: "var(--font-jakarta)" }}
+                    domain={[0, 100]}
                   />
                   <Tooltip
                     contentStyle={{
@@ -106,14 +123,16 @@ export function ComplianceChart({ trends, violationsByCategory }: ComplianceChar
                   />
                   <Legend wrapperStyle={{ paddingTop: "20px" }}/>
                   <Area
-                    type="monotone"
+                    type="linear"
                     dataKey="compliance_percentage"
                     stroke="#5b4cea"
-                    strokeWidth={3}
+                    strokeWidth={2.5}
                     fillOpacity={1}
                     fill="url(#colorCompliance)"
                     name="Compliance %"
-                    activeDot={{ r: 6, strokeWidth: 0 }}
+                    dot={{ r: 4, fill: "#5b4cea", strokeWidth: 2, stroke: "#fff" }}
+                    activeDot={{ r: 6, strokeWidth: 2, stroke: "#fff" }}
+                    connectNulls={false}
                   />
                 </AreaChart>
               </ResponsiveContainer>
@@ -189,19 +208,26 @@ export function ComplianceChart({ trends, violationsByCategory }: ComplianceChar
           <CardContent>
             <div className="h-[450px] w-full">
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={trends} barGap={8}>
+                <BarChart data={trends} barGap={8} barCategoryGap="20%">
                   <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f0f0f0" />
                   <XAxis
                     dataKey="date"
+                    type="category"
                     axisLine={false}
                     tickLine={false}
-                    tick={{ fill: "#6b7280", fontSize: 12, fontFamily: "var(--font-jakarta)" }}
+                    tick={{ fill: "#6b7280", fontSize: 11, fontFamily: "var(--font-jakarta)" }}
                     dy={10}
+                    angle={-45}
+                    textAnchor="end"
+                    height={80}
+                    interval="preserveStartEnd"
+                    tickFormatter={formatDate}
                   />
                   <YAxis
                     axisLine={false}
                     tickLine={false}
                     tick={{ fill: "#6b7280", fontSize: 12, fontFamily: "var(--font-jakarta)" }}
+                    allowDecimals={false}
                   />
                   <Tooltip
                     contentStyle={{
@@ -219,15 +245,15 @@ export function ComplianceChart({ trends, violationsByCategory }: ComplianceChar
                     dataKey="violations" 
                     fill="#ef4444" 
                     name="Violations" 
-                    radius={[6, 6, 6, 6]}
-                    maxBarSize={40}
+                    radius={[4, 4, 0, 0]}
+                    maxBarSize={50}
                   />
                   <Bar 
                     dataKey="inspections" 
                     fill="#10b981" 
                     name="Inspections" 
-                    radius={[6, 6, 6, 6]}
-                    maxBarSize={40}
+                    radius={[4, 4, 0, 0]}
+                    maxBarSize={50}
                   />
                 </BarChart>
               </ResponsiveContainer>

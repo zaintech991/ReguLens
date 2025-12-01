@@ -6,7 +6,7 @@ To enable AI-powered document analysis, you need to set up a Groq API key.
 
 ### Steps:
 
-1. **Get a Groq API Key:**
+1. **Get a Groq API Key:** 
    - Visit https://console.groq.com/
    - Sign up or log in
    - Navigate to API Keys section
