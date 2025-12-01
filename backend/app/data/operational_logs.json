@@ -1,0 +1,502 @@
+[
+  {
+    "id": "LOG-915",
+    "facility": "Plant A",
+    "metric": "Temperature",
+    "value": 18.82,
+    "unit": "\u00b0C",
+    "threshold": 25,
+    "timestamp": "2025-11-30T11:24:27.632785Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-738",
+    "facility": "Warehouse 1",
+    "metric": "Air Emissions",
+    "value": 12.88,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-11-29T18:24:27.632806Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-978",
+    "facility": "Office Complex",
+    "metric": "Air Emissions",
+    "value": 25.78,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-12-01T14:24:27.632822Z",
+    "status": "EXCEEDED"
+  },
+  {
+    "id": "LOG-182",
+    "facility": "Office Complex",
+    "metric": "Air Emissions",
+    "value": 21.59,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-11-29T08:24:27.632834Z",
+    "status": "EXCEEDED"
+  },
+  {
+    "id": "LOG-327",
+    "facility": "Office Complex",
+    "metric": "Water Quality",
+    "value": 65.04,
+    "unit": "mg/L",
+    "threshold": 75,
+    "timestamp": "2025-11-30T14:24:27.632846Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-656",
+    "facility": "Plant C",
+    "metric": "Pressure",
+    "value": 59.69,
+    "unit": "psi",
+    "threshold": 65,
+    "timestamp": "2025-11-29T12:24:27.632857Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-931",
+    "facility": "Plant C",
+    "metric": "Temperature",
+    "value": 30.22,
+    "unit": "\u00b0C",
+    "threshold": 25,
+    "timestamp": "2025-12-01T15:24:27.632868Z",
+    "status": "EXCEEDED"
+  },
+  {
+    "id": "LOG-123",
+    "facility": "Warehouse 1",
+    "metric": "Temperature",
+    "value": 23.14,
+    "unit": "\u00b0C",
+    "threshold": 25,
+    "timestamp": "2025-11-29T20:24:27.632879Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-300",
+    "facility": "Warehouse 1",
+    "metric": "Vibration",
+    "value": 4.06,
+    "unit": "mm/s",
+    "threshold": 10,
+    "timestamp": "2025-11-30T18:24:27.632889Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-627",
+    "facility": "Plant B",
+    "metric": "Vibration",
+    "value": 12.62,
+    "unit": "mm/s",
+    "threshold": 10,
+    "timestamp": "2025-11-30T11:24:27.632901Z",
+    "status": "EXCEEDED"
+  },
+  {
+    "id": "LOG-695",
+    "facility": "Plant C",
+    "metric": "Vibration",
+    "value": 4.59,
+    "unit": "mm/s",
+    "threshold": 10,
+    "timestamp": "2025-12-01T04:24:27.632911Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-569",
+    "facility": "Plant B",
+    "metric": "Air Emissions",
+    "value": 11.96,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-11-28T23:24:27.632922Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-296",
+    "facility": "Plant B",
+    "metric": "Water Quality",
+    "value": 35.17,
+    "unit": "mg/L",
+    "threshold": 75,
+    "timestamp": "2025-12-01T09:24:27.632932Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-185",
+    "facility": "Warehouse 1",
+    "metric": "Water Quality",
+    "value": 34.35,
+    "unit": "mg/L",
+    "threshold": 75,
+    "timestamp": "2025-11-30T18:24:27.632942Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-600",
+    "facility": "Office Complex",
+    "metric": "Temperature",
+    "value": 18.9,
+    "unit": "\u00b0C",
+    "threshold": 25,
+    "timestamp": "2025-11-28T21:24:27.632953Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-466",
+    "facility": "Plant C",
+    "metric": "Pressure",
+    "value": 46.55,
+    "unit": "psi",
+    "threshold": 65,
+    "timestamp": "2025-11-29T09:24:27.632963Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-994",
+    "facility": "Warehouse 1",
+    "metric": "Water Quality",
+    "value": 65.5,
+    "unit": "mg/L",
+    "threshold": 75,
+    "timestamp": "2025-11-30T16:24:27.632973Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-317",
+    "facility": "Office Complex",
+    "metric": "Air Emissions",
+    "value": 19.51,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-11-30T13:24:27.632983Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-206",
+    "facility": "Office Complex",
+    "metric": "Air Emissions",
+    "value": 21.68,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-11-29T00:24:27.632993Z",
+    "status": "EXCEEDED"
+  },
+  {
+    "id": "LOG-831",
+    "facility": "Plant A",
+    "metric": "Temperature",
+    "value": 29.26,
+    "unit": "\u00b0C",
+    "threshold": 25,
+    "timestamp": "2025-11-29T16:24:27.633003Z",
+    "status": "EXCEEDED"
+  },
+  {
+    "id": "LOG-155",
+    "facility": "Warehouse 1",
+    "metric": "Water Quality",
+    "value": 58.57,
+    "unit": "mg/L",
+    "threshold": 75,
+    "timestamp": "2025-11-29T14:24:27.633013Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-877",
+    "facility": "Plant B",
+    "metric": "Pressure",
+    "value": 55.15,
+    "unit": "psi",
+    "threshold": 65,
+    "timestamp": "2025-11-29T10:24:27.633023Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-678",
+    "facility": "Plant B",
+    "metric": "Air Emissions",
+    "value": 12.99,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-12-01T10:24:27.633033Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-324",
+    "facility": "Plant B",
+    "metric": "Air Emissions",
+    "value": 18.5,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-12-01T19:24:27.633043Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-411",
+    "facility": "Plant B",
+    "metric": "Air Emissions",
+    "value": 21.69,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-11-30T01:24:27.633054Z",
+    "status": "EXCEEDED"
+  },
+  {
+    "id": "LOG-933",
+    "facility": "Plant A",
+    "metric": "Temperature",
+    "value": 20.94,
+    "unit": "\u00b0C",
+    "threshold": 25,
+    "timestamp": "2025-11-30T12:24:27.633063Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-296",
+    "facility": "Warehouse 1",
+    "metric": "Vibration",
+    "value": 7.25,
+    "unit": "mm/s",
+    "threshold": 10,
+    "timestamp": "2025-12-01T10:24:27.633073Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-586",
+    "facility": "Warehouse 1",
+    "metric": "Noise Level",
+    "value": 65.99,
+    "unit": "dB",
+    "threshold": 75,
+    "timestamp": "2025-11-29T23:24:27.633083Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-756",
+    "facility": "Plant A",
+    "metric": "Water Quality",
+    "value": 92.33,
+    "unit": "mg/L",
+    "threshold": 75,
+    "timestamp": "2025-11-30T15:24:27.633093Z",
+    "status": "EXCEEDED"
+  },
+  {
+    "id": "LOG-216",
+    "facility": "Office Complex",
+    "metric": "Air Emissions",
+    "value": 19.05,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-11-29T01:24:27.633103Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-943",
+    "facility": "Plant B",
+    "metric": "Air Emissions",
+    "value": 21.08,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-11-29T14:24:27.633112Z",
+    "status": "EXCEEDED"
+  },
+  {
+    "id": "LOG-338",
+    "facility": "Plant A",
+    "metric": "Pressure",
+    "value": 58.53,
+    "unit": "psi",
+    "threshold": 65,
+    "timestamp": "2025-11-29T02:24:27.633122Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-744",
+    "facility": "Plant C",
+    "metric": "Noise Level",
+    "value": 52.33,
+    "unit": "dB",
+    "threshold": 75,
+    "timestamp": "2025-12-01T14:24:27.633132Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-102",
+    "facility": "Office Complex",
+    "metric": "Vibration",
+    "value": 2.46,
+    "unit": "mm/s",
+    "threshold": 10,
+    "timestamp": "2025-11-28T19:24:27.633142Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-516",
+    "facility": "Warehouse 1",
+    "metric": "Water Quality",
+    "value": 82.82,
+    "unit": "mg/L",
+    "threshold": 75,
+    "timestamp": "2025-12-01T18:24:27.633152Z",
+    "status": "EXCEEDED"
+  },
+  {
+    "id": "LOG-566",
+    "facility": "Plant C",
+    "metric": "Air Emissions",
+    "value": 17.92,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-11-30T01:24:27.633162Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-896",
+    "facility": "Office Complex",
+    "metric": "Air Emissions",
+    "value": 24.65,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-11-29T21:24:27.633172Z",
+    "status": "EXCEEDED"
+  },
+  {
+    "id": "LOG-399",
+    "facility": "Plant B",
+    "metric": "Temperature",
+    "value": 27.61,
+    "unit": "\u00b0C",
+    "threshold": 25,
+    "timestamp": "2025-11-30T21:24:27.633182Z",
+    "status": "EXCEEDED"
+  },
+  {
+    "id": "LOG-436",
+    "facility": "Office Complex",
+    "metric": "Temperature",
+    "value": 18.49,
+    "unit": "\u00b0C",
+    "threshold": 25,
+    "timestamp": "2025-12-01T01:24:27.633192Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-181",
+    "facility": "Office Complex",
+    "metric": "Air Emissions",
+    "value": 19.12,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-11-30T05:24:27.633202Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-795",
+    "facility": "Office Complex",
+    "metric": "Water Quality",
+    "value": 40.41,
+    "unit": "mg/L",
+    "threshold": 75,
+    "timestamp": "2025-11-28T20:24:27.633211Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-763",
+    "facility": "Plant A",
+    "metric": "Pressure",
+    "value": 48.14,
+    "unit": "psi",
+    "threshold": 65,
+    "timestamp": "2025-11-29T17:24:27.633221Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-349",
+    "facility": "Office Complex",
+    "metric": "Pressure",
+    "value": 55.69,
+    "unit": "psi",
+    "threshold": 65,
+    "timestamp": "2025-11-30T17:24:27.633231Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-505",
+    "facility": "Plant B",
+    "metric": "Temperature",
+    "value": 21.59,
+    "unit": "\u00b0C",
+    "threshold": 25,
+    "timestamp": "2025-11-29T20:24:27.633240Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-295",
+    "facility": "Plant B",
+    "metric": "Noise Level",
+    "value": 64.85,
+    "unit": "dB",
+    "threshold": 75,
+    "timestamp": "2025-11-29T07:24:27.633249Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-579",
+    "facility": "Warehouse 1",
+    "metric": "Air Emissions",
+    "value": 19.38,
+    "unit": "ppm",
+    "threshold": 20,
+    "timestamp": "2025-11-30T13:24:27.633259Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-544",
+    "facility": "Plant B",
+    "metric": "Noise Level",
+    "value": 55.13,
+    "unit": "dB",
+    "threshold": 75,
+    "timestamp": "2025-12-01T15:24:27.633269Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-441",
+    "facility": "Plant C",
+    "metric": "Noise Level",
+    "value": 67.95,
+    "unit": "dB",
+    "threshold": 75,
+    "timestamp": "2025-11-30T08:24:27.633280Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-699",
+    "facility": "Office Complex",
+    "metric": "Noise Level",
+    "value": 64.89,
+    "unit": "dB",
+    "threshold": 75,
+    "timestamp": "2025-11-30T06:24:27.633290Z",
+    "status": "NORMAL"
+  },
+  {
+    "id": "LOG-154",
+    "facility": "Plant B",
+    "metric": "Pressure",
+    "value": 42.42,
+    "unit": "psi",
+    "threshold": 65,
+    "timestamp": "2025-11-29T02:24:27.633300Z",
+    "status": "NORMAL"
+  }
+]

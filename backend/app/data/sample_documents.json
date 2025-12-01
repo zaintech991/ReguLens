@@ -1,0 +1,142 @@
+[
+  {
+    "id": "DOC-1000",
+    "title": "Regulatory Compliance Standard",
+    "body": "All operations must comply with Regulatory regulations. Regular audits are required. Documentation must be maintained for a minimum of 5 years. Non-compliance may result in penalties. All personnel must be trained on these requirements annually.",
+    "category": "Regulatory",
+    "published_at": "2025-11-08"
+  },
+  {
+    "id": "DOC-1001",
+    "title": "Data Encryption Standards",
+    "body": "All sensitive data must be encrypted using AES-256 or equivalent. Encryption keys must be rotated every 60 days. Access logs must be maintained for 7 years. Data breach notifications must be sent within 72 hours of discovery. Regular security audits are mandatory. All personnel must be trained on these requirements annually.",
+    "category": "Data Privacy",
+    "published_at": "2025-11-08"
+  },
+  {
+    "id": "DOC-1002",
+    "title": "Personal Protective Equipment Requirements",
+    "body": "All personnel must wear approved PPE in designated zones. Safety equipment must meet ANSI/OSHA standards. Equipment inspections must occur before each shift. Defective equipment must be removed from service immediately. Training certifications must be renewed every 6 months. Compliance with these standards is mandatory and non-negotiable.",
+    "category": "Safety",
+    "published_at": "2025-07-19"
+  },
+  {
+    "id": "DOC-1003",
+    "title": "Transaction Reporting Thresholds",
+    "body": "All financial transactions exceeding $50000 must be reported to compliance officers within 24 hours. Audit trails must be maintained for all transactions. Quarterly financial reviews are required. Suspicious activity reports must be filed immediately. Failure to comply may result in regulatory action.",
+    "category": "Financial",
+    "published_at": "2025-08-29"
+  },
+  {
+    "id": "DOC-1004",
+    "title": "Regulatory Compliance Standard",
+    "body": "All operations must comply with Regulatory regulations. Regular audits are required. Documentation must be maintained for a minimum of 5 years. Non-compliance may result in penalties. Compliance with these standards is mandatory and non-negotiable.",
+    "category": "Regulatory",
+    "published_at": "2025-11-05"
+  },
+  {
+    "id": "DOC-1005",
+    "title": "Regulatory Compliance Standard",
+    "body": "All operations must comply with Regulatory regulations. Regular audits are required. Documentation must be maintained for a minimum of 5 years. Non-compliance may result in penalties. Documentation must be available for inspection at all times.",
+    "category": "Regulatory",
+    "published_at": "2025-09-07"
+  },
+  {
+    "id": "DOC-1006",
+    "title": "Transaction Reporting Thresholds",
+    "body": "All financial transactions exceeding $50000 must be reported to compliance officers within 24 hours. Audit trails must be maintained for all transactions. Quarterly financial reviews are required. Suspicious activity reports must be filed immediately. Documentation must be available for inspection at all times.",
+    "category": "Financial",
+    "published_at": "2025-10-24"
+  },
+  {
+    "id": "DOC-1007",
+    "title": "Quality Compliance Standard",
+    "body": "All operations must comply with Quality regulations. Regular audits are required. Documentation must be maintained for a minimum of 5 years. Non-compliance may result in penalties. Compliance with these standards is mandatory and non-negotiable.",
+    "category": "Quality",
+    "published_at": "2025-11-12"
+  },
+  {
+    "id": "DOC-1008",
+    "title": "Personal Protective Equipment Requirements",
+    "body": "All personnel must wear approved PPE in designated zones. Safety equipment must meet ANSI/OSHA standards. Equipment inspections must occur before each shift. Defective equipment must be removed from service immediately. Training certifications must be renewed every 12 months. All personnel must be trained on these requirements annually.",
+    "category": "Safety",
+    "published_at": "2025-07-31"
+  },
+  {
+    "id": "DOC-1009",
+    "title": "Quality Compliance Standard",
+    "body": "All operations must comply with Quality regulations. Regular audits are required. Documentation must be maintained for a minimum of 5 years. Non-compliance may result in penalties. Failure to comply may result in regulatory action.",
+    "category": "Quality",
+    "published_at": "2025-06-21"
+  },
+  {
+    "id": "DOC-1010",
+    "title": "Data Encryption Standards",
+    "body": "All sensitive data must be encrypted using AES-256 or equivalent. Encryption keys must be rotated every 60 days. Access logs must be maintained for 7 years. Data breach notifications must be sent within 72 hours of discovery. Regular security audits are mandatory. Documentation must be available for inspection at all times.",
+    "category": "Data Privacy",
+    "published_at": "2025-08-27"
+  },
+  {
+    "id": "DOC-1011",
+    "title": "Data Encryption Standards",
+    "body": "All sensitive data must be encrypted using AES-256 or equivalent. Encryption keys must be rotated every 60 days. Access logs must be maintained for 7 years. Data breach notifications must be sent within 72 hours of discovery. Regular security audits are mandatory. All personnel must be trained on these requirements annually.",
+    "category": "Data Privacy",
+    "published_at": "2025-07-04"
+  },
+  {
+    "id": "DOC-1012",
+    "title": "Personal Protective Equipment Requirements",
+    "body": "All personnel must wear approved PPE in designated zones. Safety equipment must meet ANSI/OSHA standards. Equipment inspections must occur before each shift. Defective equipment must be removed from service immediately. Training certifications must be renewed every 24 months. Documentation must be available for inspection at all times.",
+    "category": "Safety",
+    "published_at": "2025-06-04"
+  },
+  {
+    "id": "DOC-1013",
+    "title": "Regulatory Compliance Standard",
+    "body": "All operations must comply with Regulatory regulations. Regular audits are required. Documentation must be maintained for a minimum of 5 years. Non-compliance may result in penalties. Compliance with these standards is mandatory and non-negotiable.",
+    "category": "Regulatory",
+    "published_at": "2025-10-07"
+  },
+  {
+    "id": "DOC-1014",
+    "title": "Security Compliance Standard",
+    "body": "All operations must comply with Security regulations. Regular audits are required. Documentation must be maintained for a minimum of 5 years. Non-compliance may result in penalties. All personnel must be trained on these requirements annually.",
+    "category": "Security",
+    "published_at": "2025-08-29"
+  },
+  {
+    "id": "DOC-1015",
+    "title": "Quality Compliance Standard",
+    "body": "All operations must comply with Quality regulations. Regular audits are required. Documentation must be maintained for a minimum of 5 years. Non-compliance may result in penalties. Failure to comply may result in regulatory action.",
+    "category": "Quality",
+    "published_at": "2025-07-14"
+  },
+  {
+    "id": "DOC-1016",
+    "title": "Quality Compliance Standard",
+    "body": "All operations must comply with Quality regulations. Regular audits are required. Documentation must be maintained for a minimum of 5 years. Non-compliance may result in penalties. Failure to comply may result in regulatory action.",
+    "category": "Quality",
+    "published_at": "2025-08-21"
+  },
+  {
+    "id": "DOC-1017",
+    "title": "Quality Compliance Standard",
+    "body": "All operations must comply with Quality regulations. Regular audits are required. Documentation must be maintained for a minimum of 5 years. Non-compliance may result in penalties. Documentation must be available for inspection at all times.",
+    "category": "Quality",
+    "published_at": "2025-07-11"
+  },
+  {
+    "id": "DOC-1018",
+    "title": "Emergency Response Procedures",
+    "body": "Emergency evacuation drills must be conducted every 3 months. All exits must remain unobstructed at all times. Fire suppression systems must be tested quarterly. Emergency contact information must be posted in all work areas. Incident response teams must be available 24/7. All personnel must be trained on these requirements annually.",
+    "category": "Safety",
+    "published_at": "2025-06-21"
+  },
+  {
+    "id": "DOC-1019",
+    "title": "Personal Protective Equipment Requirements",
+    "body": "All personnel must wear approved PPE in designated zones. Safety equipment must meet ANSI/OSHA standards. Equipment inspections must occur before each shift. Defective equipment must be removed from service immediately. Training certifications must be renewed every 6 months. All personnel must be trained on these requirements annually.",
+    "category": "Safety",
+    "published_at": "2025-10-28"
+  }
+]
